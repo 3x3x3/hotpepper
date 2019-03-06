@@ -11,14 +11,14 @@ ext_modules = [
 	Extension(
 		name="hotpepper.time",
 		sources=[
-			os.path.join("src", "hp_time.cxx"),
+			os.path.join("src", "cpp", "hp_time.cpp"),
 		],
 	),
 ]
 
 setup(
 	name="hotpepper",
-	version="1.0.0",
+	version="0.0.1",
 	description="hotpepper",
 	ext_modules=ext_modules,
 	packages=packages,
