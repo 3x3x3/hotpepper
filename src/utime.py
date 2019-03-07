@@ -100,6 +100,10 @@ def get_cur_ts_10d():
     return _utime.get_cur_ts_10d()
 get_cur_ts_10d = _utime.get_cur_ts_10d
 
+def get_cur_ts_13d():
+    return _utime.get_cur_ts_13d()
+get_cur_ts_13d = _utime.get_cur_ts_13d
+
 def get_cur_ts_16d():
     return _utime.get_cur_ts_16d()
 get_cur_ts_16d = _utime.get_cur_ts_16d
@@ -112,6 +116,10 @@ def get_ts_10d(year, month, day, hour, minute, second):
     return _utime.get_ts_10d(year, month, day, hour, minute, second)
 get_ts_10d = _utime.get_ts_10d
 
+def get_ts_13d(year, month, day, hour, minute, second, milli_sec):
+    return _utime.get_ts_13d(year, month, day, hour, minute, second, milli_sec)
+get_ts_13d = _utime.get_ts_13d
+
 def get_ts_16d(year, month, day, hour, minute, second, micro_sec):
     return _utime.get_ts_16d(year, month, day, hour, minute, second, micro_sec)
 get_ts_16d = _utime.get_ts_16d
@@ -123,6 +131,10 @@ get_ts = _utime.get_ts
 def get_datetime_from_ts_10d(timestamp):
     return _utime.get_datetime_from_ts_10d(timestamp)
 get_datetime_from_ts_10d = _utime.get_datetime_from_ts_10d
+
+def get_datetime_from_ts_13d(timestamp):
+    return _utime.get_datetime_from_ts_13d(timestamp)
+get_datetime_from_ts_13d = _utime.get_datetime_from_ts_13d
 
 def get_datetime_from_ts_16d(timestamp):
     return _utime.get_datetime_from_ts_16d(timestamp)

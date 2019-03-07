@@ -3340,6 +3340,19 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_get_cur_ts_13d(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  long long result;
+  
+  if (!PyArg_ParseTuple(args,(char *)":get_cur_ts_13d")) SWIG_fail;
+  result = (long long)get_cur_ts_13d();
+  resultobj = SWIG_From_long_SS_long(static_cast< long long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_get_cur_ts_16d(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   long long result;
@@ -3426,6 +3439,82 @@ SWIGINTERN PyObject *_wrap_get_ts_10d(PyObject *SWIGUNUSEDPARM(self), PyObject *
   } 
   arg6 = static_cast< int >(val6);
   result = (long long)get_ts_10d(arg1,arg2,arg3,arg4,arg5,arg6);
+  resultobj = SWIG_From_long_SS_long(static_cast< long long >(result));
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
+SWIGINTERN PyObject *_wrap_get_ts_13d(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  int arg1 ;
+  int arg2 ;
+  int arg3 ;
+  int arg4 ;
+  int arg5 ;
+  int arg6 ;
+  int arg7 ;
+  int val1 ;
+  int ecode1 = 0 ;
+  int val2 ;
+  int ecode2 = 0 ;
+  int val3 ;
+  int ecode3 = 0 ;
+  int val4 ;
+  int ecode4 = 0 ;
+  int val5 ;
+  int ecode5 = 0 ;
+  int val6 ;
+  int ecode6 = 0 ;
+  int val7 ;
+  int ecode7 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject * obj1 = 0 ;
+  PyObject * obj2 = 0 ;
+  PyObject * obj3 = 0 ;
+  PyObject * obj4 = 0 ;
+  PyObject * obj5 = 0 ;
+  PyObject * obj6 = 0 ;
+  long long result;
+  
+  if (!PyArg_ParseTuple(args,(char *)"OOOOOOO:get_ts_13d",&obj0,&obj1,&obj2,&obj3,&obj4,&obj5,&obj6)) SWIG_fail;
+  ecode1 = SWIG_AsVal_int(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "get_ts_13d" "', argument " "1"" of type '" "int""'");
+  } 
+  arg1 = static_cast< int >(val1);
+  ecode2 = SWIG_AsVal_int(obj1, &val2);
+  if (!SWIG_IsOK(ecode2)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "get_ts_13d" "', argument " "2"" of type '" "int""'");
+  } 
+  arg2 = static_cast< int >(val2);
+  ecode3 = SWIG_AsVal_int(obj2, &val3);
+  if (!SWIG_IsOK(ecode3)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "get_ts_13d" "', argument " "3"" of type '" "int""'");
+  } 
+  arg3 = static_cast< int >(val3);
+  ecode4 = SWIG_AsVal_int(obj3, &val4);
+  if (!SWIG_IsOK(ecode4)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode4), "in method '" "get_ts_13d" "', argument " "4"" of type '" "int""'");
+  } 
+  arg4 = static_cast< int >(val4);
+  ecode5 = SWIG_AsVal_int(obj4, &val5);
+  if (!SWIG_IsOK(ecode5)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode5), "in method '" "get_ts_13d" "', argument " "5"" of type '" "int""'");
+  } 
+  arg5 = static_cast< int >(val5);
+  ecode6 = SWIG_AsVal_int(obj5, &val6);
+  if (!SWIG_IsOK(ecode6)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode6), "in method '" "get_ts_13d" "', argument " "6"" of type '" "int""'");
+  } 
+  arg6 = static_cast< int >(val6);
+  ecode7 = SWIG_AsVal_int(obj6, &val7);
+  if (!SWIG_IsOK(ecode7)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode7), "in method '" "get_ts_13d" "', argument " "7"" of type '" "int""'");
+  } 
+  arg7 = static_cast< int >(val7);
+  result = (long long)get_ts_13d(arg1,arg2,arg3,arg4,arg5,arg6,arg7);
   resultobj = SWIG_From_long_SS_long(static_cast< long long >(result));
   return resultobj;
 fail:
@@ -3607,6 +3696,28 @@ fail:
 }
 
 
+SWIGINTERN PyObject *_wrap_get_datetime_from_ts_13d(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+  PyObject *resultobj = 0;
+  long long arg1 ;
+  long long val1 ;
+  int ecode1 = 0 ;
+  PyObject * obj0 = 0 ;
+  PyObject *result = 0 ;
+  
+  if (!PyArg_ParseTuple(args,(char *)"O:get_datetime_from_ts_13d",&obj0)) SWIG_fail;
+  ecode1 = SWIG_AsVal_long_SS_long(obj0, &val1);
+  if (!SWIG_IsOK(ecode1)) {
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "get_datetime_from_ts_13d" "', argument " "1"" of type '" "long long""'");
+  } 
+  arg1 = static_cast< long long >(val1);
+  result = (PyObject *)get_datetime_from_ts_13d(arg1);
+  resultobj = result;
+  return resultobj;
+fail:
+  return NULL;
+}
+
+
 SWIGINTERN PyObject *_wrap_get_datetime_from_ts_16d(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
   long long arg1 ;
@@ -3631,18 +3742,12 @@ fail:
 
 SWIGINTERN PyObject *_wrap_get_datetime_from_ts(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  double arg1 ;
-  double val1 ;
-  int ecode1 = 0 ;
+  PyObject *arg1 = (PyObject *) 0 ;
   PyObject * obj0 = 0 ;
   PyObject *result = 0 ;
   
   if (!PyArg_ParseTuple(args,(char *)"O:get_datetime_from_ts",&obj0)) SWIG_fail;
-  ecode1 = SWIG_AsVal_double(obj0, &val1);
-  if (!SWIG_IsOK(ecode1)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "get_datetime_from_ts" "', argument " "1"" of type '" "double""'");
-  } 
-  arg1 = static_cast< double >(val1);
+  arg1 = obj0;
   result = (PyObject *)get_datetime_from_ts(arg1);
   resultobj = result;
   return resultobj;
@@ -3654,12 +3759,15 @@ fail:
 static PyMethodDef SwigMethods[] = {
 	 { (char *)"SWIG_PyInstanceMethod_New", (PyCFunction)SWIG_PyInstanceMethod_New, METH_O, NULL},
 	 { (char *)"get_cur_ts_10d", _wrap_get_cur_ts_10d, METH_VARARGS, NULL},
+	 { (char *)"get_cur_ts_13d", _wrap_get_cur_ts_13d, METH_VARARGS, NULL},
 	 { (char *)"get_cur_ts_16d", _wrap_get_cur_ts_16d, METH_VARARGS, NULL},
 	 { (char *)"get_cur_ts", _wrap_get_cur_ts, METH_VARARGS, NULL},
 	 { (char *)"get_ts_10d", _wrap_get_ts_10d, METH_VARARGS, NULL},
+	 { (char *)"get_ts_13d", _wrap_get_ts_13d, METH_VARARGS, NULL},
 	 { (char *)"get_ts_16d", _wrap_get_ts_16d, METH_VARARGS, NULL},
 	 { (char *)"get_ts", _wrap_get_ts, METH_VARARGS, NULL},
 	 { (char *)"get_datetime_from_ts_10d", _wrap_get_datetime_from_ts_10d, METH_VARARGS, NULL},
+	 { (char *)"get_datetime_from_ts_13d", _wrap_get_datetime_from_ts_13d, METH_VARARGS, NULL},
 	 { (char *)"get_datetime_from_ts_16d", _wrap_get_datetime_from_ts_16d, METH_VARARGS, NULL},
 	 { (char *)"get_datetime_from_ts", _wrap_get_datetime_from_ts, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
