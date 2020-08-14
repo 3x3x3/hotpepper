@@ -2,13 +2,9 @@
 C++을 이용하여 Python을 좀 더 잘 활용할 수 있게 도와주는 패키지 입니다.
 - hotpepper.utime: 시간관련
 
-## Wheel 파일로 설치
-dist 폴더의 \*.whl 파일로 설치를 합니다.  
-whl파일을 이용한 설치는 C++ Compiler 및 SWIG가 설치 되어있지 않더라도 설치가 가능합니다.  
-다음은 64bit Python 3.7에서의 설치 예시 입니다.
+## Package 설치
 ```commandline
-cd dist
-pip install hotpepper-0.0.1-cp37-cp37m-win_amd64.whl
+pip install hotperpper
 ```
 
 ## Package 삭제
